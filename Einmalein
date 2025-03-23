@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int eingabe1;
+    int eingabe2;
+    int faktor = 1;
+    int ausgabe;
+
+
+    printf("Welches Einmal-Eins soll ausgegeben werden?\n");
+    scanf("%d", &eingabe1);
+    printf("Bis zu welcher Grenze soll das Einmal-Eins ausgegeben werden?\n");
+    scanf("%d", &eingabe2);
+
+
+
+    while (faktor <= eingabe2)
+    {
+    int ausgabe = eingabe1 * faktor;
+    faktor ++;
+
+    printf("%d\n", ausgabe);
+
+    }
+    return 0;
+}
