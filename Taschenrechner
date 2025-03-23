@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int erg, erste_zahl, zweite_zahl;
+    char rechenzeichen;
+
+    printf("Tippe 1. Zahl ein.");
+    scanf("%d", &erste_zahl);
+    printf("Tippe 2. Zahl ein.");
+    scanf("%d", &zweite_zahl);
+    printf("Tippe ein Rechenzeichen ein.");
+    scanf("\n%c" , &rechenzeichen);
+    printf("%d %c %d = ", erste_zahl, rechenzeichen, zweite_zahl);
+
+
+
+    if (rechenzeichen == '+')
+    {
+        printf("%d\n\n", erste_zahl + zweite_zahl);
+
+    }
+
+    else if (rechenzeichen == '-')
+    {
+        printf("%d\n\n", erste_zahl - zweite_zahl);
+
+    }
+
+    else if (rechenzeichen == '*')
+    {
+        printf("%d\n\n", erste_zahl * zweite_zahl);
+
+    }
+    else {printf(" %d\n\n", erste_zahl / zweite_zahl);
+    }
+
+
+}
+
+
+
+
