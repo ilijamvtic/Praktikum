@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int numerische_grenze = 0;
+    int a = 0;
+    int b = 1;
+    int c = 1;
+    printf("Schreibe eine Zahl rein.");
+    scanf("%d", &numerische_grenze);
+    printf("0\n");
+
+
+
+while (c < numerische_grenze)
+{
+    printf("%d\n", c);
+    c = a + b;
+
+    a = b;
+    b = c;
+
+
+
+}
+
+
+
+return 0;
+
+}
