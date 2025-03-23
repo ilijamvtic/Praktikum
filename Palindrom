@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    char name[100];
+    int size;
+    scanf("%s", &name);
+
+    //length = strlen(name);
+
+    // '\0'
+    for (int i = 0; i <= 99; i++){
+        if (name[i] == '\0'){
+            size = i;
+            break;
+        }
+    }
+
+    //
+
+
+    for (int i = 0; i < size; i++) {
+        if (name[i] != name[size - 1 - i]){
+            printf("kein palindrom");
+            return 0;
+        }
+    }
+
+    printf("palindrom");
+
+    return 0;
+
+}
